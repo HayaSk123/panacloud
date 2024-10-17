@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Document</title>
+    <style>
+        .header-top {
+            background-color: black;
+            height: 45px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-bottom {
+            background-color: white;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 140px;
+            position: absolute;
+            left: 55px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .background-color {
+            background-color: #8dc63f;
+            height: 350px;
+            padding-top: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bg-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .bg-design1, .bg-design2 {
+            background-color: #a2d84c;
+            height: 70px;
+            width: 350px;
+        }
+
+        .main-heading {
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            margin: 7px 0;
+            text-align: center;
+        }
+
+        .herosec-text {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-top: 30px;
+            text-align: center;
+            max-width: 700px;
+            padding-bottom: 20px;
+        }
+
+        .herosec-button {
+            background-color: rgb(255, 184, 9);
+            border-radius: 0;
+            border-style: none;
+            padding: 10px 20px;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .facebook-logo {
+            width: 42px;
+            padding-left: 45px;
+        }
+        .twitter-logo {
+            width: 30px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+        }
+        .g-logo {
+            width: 30px;
+            padding-left: 18px;
+            padding-bottom: 5px;
+        }
+        .linkedin-logo {
+            width: 45px;
+            padding-left: 10px;
+        }
+
+        .phone-icon {
+            color: #a2d84c;
+            font-size: 24px;
+            margin-left: 580px;
+        }
+
+        .phone2 {
+            color: #a2d84c;
+            margin-left: 20px;
+        }
+
+        .contact-num {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .contact-button {
+            background-color: #a2d84c;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-style: none;
+            margin-left: 25px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            margin-left: 370px;
+        }
+
+    .nav-list li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    transition: font-weight 0.3s ease; /* Smooth transition for bold text */
+}
+
+.nav-list li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 184, 9);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-list li:hover::after {
+    width: 100%;
+}
+
+.nav-list li:hover {
+    font-weight: bold; /* Makes text bold on hover */
+    transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+
+/* Section Title */
+.heading2-our {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.heading2-advantages {
+    color: #678E19;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 15px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.advantages-paragraph {
+    color: gray;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Advantages Section */
+.advantages-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.advantage-item {
+    text-align: center;
+    max-width: 200px;
+    flex-grow: 1;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images within Advantages */
+.advantage-image {
+    width: 100%;
+    max-width: 150px; /* Ensures images don't stretch too much */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.advantage-text{
+    color: gray;
+}
+
+.happy-clients {
+    width: 350px; 
+    margin-bottom: 35px;
+}
+
+.support {
+    width: 280px;
+    margin-bottom: 35px;
+}
+
+.about-us{
+    height: 500px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.heading3-about{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.heading3-us{
+    color: #678E19;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 15px;   
+}
+
+.heading3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between; /* Ensures space between text and image */
+    align-items: center; /* Aligns items vertically */
+    padding: 20px;
+    gap: 30px; /* Adds space between text and image */
+}
+
+.about-us-text {
+    flex: 1; /* Takes up available space */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 180px;
+    color: bl;
+}
+
+.about-us-image {
+    max-width: 700px; /* Restricts image width */
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.about{
+    margin-top: 40px;
+}
+
+.heading4-our{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.heading4-services{
+    color: #678E19;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 15px;   
+}
+
+.heading4 {
+            font-size: 36px;
+            margin-top: 100px;
+            margin-bottom: 5px;
+        }
+
+.service-text {
+            font-size: 18px;
+            max-width: 600px; /* Limit width of the paragraph */
+            color: gray;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+.services {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Horizontally center */
+            text-align: center; /* Center the text inside the div */
+        }
+
+.services-card {
+            width: 280px;
+            height: 250px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: 10px;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-between; /* Space between the cards */
+            align-items: flex-start;
+            margin: 50px auto;
+            max-width: 1200px; /* Control the width for the container */
+        }
+        /* Service star image */
+        .service-card-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            padding: 10px;
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Heading of the card */
+        .service-card-heading {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 50px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+        }
+
+        /* Text inside the card */
+        .service-card-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #888;
+            margin: 10px 0;
+        }
+
+        /* Read more link styling */
+        .service-readmore {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #3ecc43;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .service-readmore:hover {
+            text-decoration: underline;
+        }
+
+        .portfolio{
+            background-color: #000;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+<div class="herosec">
+    <div class="header-top">
+        <img src="./images/facebook-removebg-preview.png" class="facebook-logo">
+        <img src="./images/twitter-removebg-preview.png" class="twitter-logo">
+        <img src="./images/g+-removebg-preview.png" class="g-logo">
+        <img src="./images/linkedin-logo.png" class="linkedin-logo">
+
+        <i class="ri-phone-line phone-icon"></i>
+        <p class="contact-num">+92(304)386-6719</p>
+        <i class="ri-phone-line phone-icon phone2"></i>
+        <p class="contact-num">+92(304)386-6719</p>
+        <button class="contact-button">CALL ME BACK</button>
+    </div>
+
+    <div class="header-bottom">
+        <img src="./images/logo.png" class="logo">
+        <ul class="nav-list">
+            <li>Why Us</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Process</li>
+            <li>Reviews</li>
+            <li>Our Skills</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <div class="background-color">
+        <div class="bg-container">
+            <div class="bg-design1"></div>
+            <h1 class="main-heading">WE ARE EXPERTS</h1>
+            <div class="bg-design2"></div>
+        </div>
+        <p class="herosec-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+        </p>
+        <button class="herosec-button">READ MORE</button>
+    </div>
+</div>    
+<div class="advantages">
+    <h1><span class="heading2-our">OUR</span><span class="heading2-advantages">ADVANTAGES</span></h1>
+</div>
+<p class="advantages-paragraph">
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+</p>
+<div class="advantages-container">
+    <div class="advantage-item">
+        <img src="./images/advantage1.png" class="advantage-image">
+        <h2>Innovation</h2>
+        <p class="advantage-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+    </div>
+    <div class="advantage-item">
+        <img src="./images/advantage2.png" class="advantage-image">
+        <h2>Quality</h2>
+        <p class="advantage-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+    </div>
+    <div class="advantage-item">
+        <img src="./images/experience.png" class="advantage-image">
+        <h2>Experience</h2>
+        <p class="advantage-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+    </div>
+    <div class="advantage-item">
+        <img src="./images/advantage4.png" class="advantage-image happy-clients">
+        <h2>Happy Clients</h2>
+        <p class="advantage-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+    </div>
+    <div class="advantage-item">
+        <img src="./images/advantage5.png" class="advantage-image support">
+        <h2>Support</h2>
+        <p class="advantage-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+    </div>
+    
+
+<div class="about-us">
+    <div>
+    <h1 class="heading3"><span class="heading3-about">ABOUT</span><span class="heading3-us">US</span></h1>
+    </div>
+    <div class="about-us matter">
+        <div class="about-us-content">
+            <div class="about-us-text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, set diam voluptuya.</p>
+                <p>At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, provident neque! Distinctio harum, assumenda aut obcaecati beatae, voluptatum velit tempora ducimus dolores pariatur inventore non et delectus fuga, corporis illo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi quibusdam ad illum dolor consequatur, quo repellendus autem incidunt reprehenderit ipsa necessitatibus mollitia ea optio temporibus sed architecto aperiam culpa?</p>
+                <button  class="herosec-button about">READ MORE</button>
+            </div>
+            <img src="./images/about us.jpeg" class="about-us-image" alt="About Us Image">
+        </div>
+    </div>
+    
+</div>
+<DIV>
+<div class="services">
+    <div>
+        <h1 class="heading4"><span class="heading4-our">OUR</span><span class="heading4-services">SERVICES</span></h1>
+    </div>
+<div class="services">
+    <p class="service-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+</div>
+</div>
+<div class="services-container">
+    <!-- First Service Card -->
+    <div class="services-card">
+        <img class="service-card-image" src="./images/services-star.png" alt="Star Icon">
+        <h2 class="service-card-heading">WEB DESIGN</h2>
+        <p class="service-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+        <a class="service-readmore" href="#">read more</a>
+    </div>
+
+    <!-- Second Service Card -->
+    <div class="services-card">
+        <img class="service-card-image" src="./images/services-star.png" alt="Star Icon">
+        <h2 class="service-card-heading">GRAPHIC DESIGN</h2>
+        <p class="service-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+        <a class="service-readmore" href="#">read more</a>
+    </div>
+
+    <!-- Third Service Card -->
+    <div class="services-card">
+        <img class="service-card-image" src="./images/services-star.png" alt="Star Icon">
+        <h2 class="service-card-heading">BRANDING</h2>
+        <p class="service-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+        <a class="service-readmore" href="#">read more</a>
+    </div>
+
+    <!-- Fourth Service Card -->
+    <div class="services-card">
+        <img class="service-card-image" src="./images/services-star.png" alt="Star Icon">
+        <h2 class="service-card-heading">MARKETING</h2>
+        <p class="service-card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod</p>
+        <a class="service-readmore" href="#">read more</a>
+    </div>
+</div>
+</DIV>
+<div class="portfolio">
+    <h1><span>OUR</span><span>Po</span></h1>
+    <img src="./images/PORTFOLIO.png" class="portfolio-img">
+</div>
+
+</body>
+</html>
