@@ -387,6 +387,89 @@
             text-decoration: underline;
         }
 
+        .portfolio{
+            background-color: #000;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        footer {
+    background-color: #678e19;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: start;
+}
+
+footer section {
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+footer pre{
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+.footer_logo {
+   width: 170px;
+   height: auto;
+}
+
+footer h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+}
+.follow-us{
+    text-align: left;
+    margin-left: 35px;
+}
+
+
+footer img {
+    display: inline-block;
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.facebook-logo-f {
+            width: 23px;
+            padding-left: 0px;
+            height: auto;
+        }
+.twitter-logo-f {
+            width: 16px;
+            height: auto;
+            padding-left: 12px;
+            padding-bottom: 3px;
+        }
+.g-logo-f {
+            width: 16px;
+            height: auto;
+            padding-left: 14px;
+            padding-bottom: 3px;
+        }
+.linkedin-logo-f {
+            width: 27px;
+            height: auto;
+            padding-left: 5px;
+        }
+       
 
     </style>
 </head>
@@ -525,5 +608,46 @@
     </div>
 </div>
 </DIV>
+<div>
+    <h1 class="heading4"><span class="heading4-our">OUR</span><span class="heading4-services">PORTFOLIO</span></h1>
+</div>
+<div class="portfolio">
+    <img src="./images/PORTFOLIO.png" class="portfolio-img">
+</div>
+
+
+<div class="footer">
+    <footer>
+        <section>
+            <img src="./images/logo-removebg-preview.png" alt="logo" class="footer_logo">
+        </section>
+        <section>
+            <h3>SERVICES</h3>
+            
+                <pre>
+Graphic Design
+Web design
+Branding
+Marketing
+Web Development</pre>
+            
+        </section>
+        <section>
+            <h3>USEFUL LINK</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, set diam voluptuya.</p>
+        </section>
+        <section>
+            <h3>CONTACT</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, set diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, set diam voluptuya.</p>
+        </section>
+        <section>
+            <h3 class="follow-us">FOLLOW US</h3>
+            <img src="./images/facebook-removebg-preview.png" class="facebook-logo-f">
+            <img src="./images/twitter-removebg-preview.png" class="twitter-logo-f">
+            <img src="./images/g+-removebg-preview.png" class="g-logo-f">
+            <img src="./images/linkedin-logo.png" class="linkedin-logo-f">
+        </section>
+    </footer>
+</div>
 </body>
 </html>
